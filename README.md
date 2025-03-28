@@ -252,7 +252,7 @@ Clean and update databases:
 ./manage.sh download
 ```
 
-### Web Interface
+### Run as Web Interface (Recommended)
 
 1. Start the web server:
 ```bash
