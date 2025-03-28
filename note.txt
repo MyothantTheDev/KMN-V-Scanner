@@ -1,0 +1,12 @@
+pipx install flask
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo apt-get install docker-compose -y
+sudo usermod -aG docker $USER
+sudo ./manage.sh build
+sudo ./manage.sh download
+sudo ./manage.sh start 
+sudo ./manage.sh stop # to stop the container
+
+## install dependencies
+source venv/bin/activate && pip install -r requirements.txt

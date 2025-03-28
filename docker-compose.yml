@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  vulnerability-scanner:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - NVD_API_KEY=e0f9bf5e-63fb-4c08-9973-be97e45e2669
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      - ./data:/app/data:rw
+    restart: unless-stopped
