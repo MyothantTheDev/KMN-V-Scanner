@@ -98,7 +98,7 @@ brew install nmap
 
 4. Set up environment variables:
 ```bash
-cp .env.example .env
+source venv/bin/activate 
 # Edit .env and add your NVD API key from https://nvd.nist.gov/developers/request-an-api-key
 ```
 
