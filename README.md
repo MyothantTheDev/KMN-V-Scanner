@@ -348,6 +348,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Command Line Usage Examples
 ```bash
+# Actually, you may not need to use command line
+
 # Network Discovery
 ./manage.sh discover 172.20.10.1
 ./manage.sh discover 192.168.1.1 --max-workers 100
