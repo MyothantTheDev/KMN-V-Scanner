@@ -218,9 +218,13 @@ Run the web interface to search vulnerabilities:
 
 ```bash
 ./manage.sh run
+#OR
+python app.py 
+#OR
+python3 app.py 
 ```
 
-Then visit: http://localhost:5000
+Then visit: http://localhost:2025
 
 Web Interface Features:
 - Modern and responsive UI
